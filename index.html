@@ -33,18 +33,18 @@
             </form>
 
             <!-- Add Button -->
-            <button class="border p-2 rounded bg-green-500 text-white" type="button" onclick="addTodo();"
-                id="add-todo-btn">Add
-                Todo</button>
+            <button class="border p-2 rounded bg-green-500 text-white" type="button" onclick="addTodo();" id="add-todo-btn">Add Todo</button>
+            <label class="ml-2">Click "Add Todo" to add your task</label>
         </section>
 
         <!-- Action Section -->
         <section class="flex justify-between my-4">
             <!-- Clear All Button -->
-            <button class="border p-2 rounded bg-red-500 text-white" id="clear-all-btn">Clear All Todos</button>
-
+            <button class="border p-2 rounded bg-red-500 text-white" id="clear-todos-btn" onclick="clearTodos()">Clear All Todos</button>
+            <button class="border p-2 rounded bg-yellow-500 text-white" id="delete-todo-btn" onclick="deleteTodo()">Delete Todo</button>
+            
             <!-- Filter Options -->
-            <button class="border p-2 rounded bg-blue-500 text-white" id="filter-todos-btn">Filter Todos</button>
+            <button class="border p-2 rounded bg-blue-500 text-white" id="filter-status-btn" onclick="filterTodos('status')">Filter by Status</button>
         </section>
 
         <!-- Todo List Section -->
@@ -54,6 +54,10 @@
                 <li>No todos available</li>
             </ul>
         </section>
+
+        <section>
+            <h2 class="text-2xl font-bold mt-8">Theme Toggle</h2>
+            <button class="border p-2 rounded bg-black text-white" id="theme-toggle-btn" onclick="toggleTheme()">Toggle Dark/Light Mode</button>
     </main>
 
     <!-- Footer Content -->
