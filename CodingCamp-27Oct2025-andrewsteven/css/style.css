@@ -1,0 +1,138 @@
+body {
+    justify-items: center;
+    align-content: center;
+    height: 100vh;  
+    background-color: #fcfdff; /* Light gray background */
+    color: #111827; /* Dark text color */
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}   
+main {
+    width: 50%;
+    margin: 0 auto;
+}
+button {
+    cursor: pointer;
+}
+input[type="text"] {
+    width: 100%;
+    padding: 20px;
+    margin-right: 0px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+.date {
+    font-size: 0.8em;
+    color: #666;
+}
+#filter-date {
+    padding: 8px;
+    margin-right: 10px;
+}
+#apply-filter-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+#apply-filter-btn:hover {
+    background-color: #2563eb;
+}
+#clear-todos-btn {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+#clear-todos-btn:hover {
+    background-color: #dc2626;
+}
+#delete-todo-btn {
+    background-color: #f59e0b;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+#delete-todo-btn:hover {
+    background-color: #d97706;
+}
+#filter-status-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+#filter-status-btn:hover {
+    background-color: #2563eb;
+}
+#add-todo-btn {
+    background-color: #10b981;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+#add-todo-btn:hover {
+    background-color: #059669;
+}
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#todo-list li .date {
+    margin-left: 20px;
+}
+#todo-list li button {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --card: #f3f4f6;
+}
+
+html.dark {
+  --bg: #0b1220;
+  --text: #e6eef8;
+  --muted: #9aa6b2;
+  --card: #0f1724;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+/* example component */
+header, footer, li {
+  background: var(--card);
+  color: var(--text);
+}
+.small { color: var(--muted); }
